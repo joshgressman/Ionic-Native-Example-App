@@ -1,14 +1,41 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Battery Status
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <table>
+       <tr>
+         <td>cordova</td>
+         <td>{{cordova}}</td>
+</tr> <tr>
+         <td>model</td>
+         <td>{{model}}</td>
+       </tr>
+       <tr>
+         <td>platform</td>
+         <td>{{platform}}</td>
+</tr> <tr>
+         <td>uuid</td>
+         <td>{{uuid}}</td>
+       </tr>
+       <tr>
+         <td>version</td>
+         <td>{{version}}</td>
+</tr> <tr>
+         <td>manufacturer</td>
+         <td>{{manufacturer}}</td>
+       </tr>
+       <tr>
+         <td>isVirtual</td>
+         <td>{{isVirtual}}</td>
+</tr> <tr>
+         <td>serial</td>
+         <td>{{serial}}</td>
+       </tr>
+     </table>
+
 </ion-content>

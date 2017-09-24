@@ -3,7 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
+import { BatteryStatus } from '@ionic-native/battery-status';
+import { Device } from '@ionic-native/device';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
@@ -24,6 +25,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    BatteryStatus,
+    Device,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
